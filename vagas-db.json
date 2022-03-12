@@ -1,0 +1,40 @@
+{
+    "vagas":[
+        {
+            "idVaga": 1,
+            "titulo": "Desenvolvedor Front-end ReactJS",
+            "descricao": "Consumo de API's",
+            "requisitos": "Experiencia com JavaScript e ReactJS",
+            "remuneracaoVaga": 4000.00,
+            "beneficios": "Vale alimentação, Vale refeição e Gympass",
+            "aberta": true
+        },
+        {
+            "idVaga": 2,
+            "titulo": "Desenvolvedor Front-end Angular",
+            "descricao": "Consumo de API's",
+            "requisitos": "Experiencia com JavaScript e Angular",
+            "remuneracaoVaga": 4200.00,
+            "beneficios": "Vale alimentação, Vale refeição e Gympass",
+            "aberta": false
+        },
+        {
+            "idVaga": 3,
+            "titulo": "Desenvolvedor Back-end Java",
+            "descricao": "Desenvolver API's",
+            "requisitos": "Experiencia com Java e SpringBoot",
+            "remuneracaoVaga": 5000.00,
+            "beneficios": "Vale alimentação, Vale refeição e Gympass",
+            "aberta": false
+        },
+        {
+            "idVaga": 4,
+            "titulo": "Desenvolvedor Back-end Dotnet C#",
+            "descricao": "Desenvolver API's",
+            "requisitos": "Experiencia com C# Dotnet e AspNetCore",
+            "remuneracaoVaga": 5200.00,
+            "beneficios": "Vale alimentação, Vale refeição e Gympass",
+            "aberta": true
+        }
+    ]
+}

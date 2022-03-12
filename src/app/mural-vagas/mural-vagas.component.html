@@ -1,0 +1,20 @@
+<section class="container lista-vagas">
+  <div class="row">
+    <div class="col d-flex justify-content-between" style="flex-flow: wrap;">
+      <div *ngFor="let vaga of vagas">
+        <div class="card" style=" max-width: 18rem">
+          <div class="card-body text-start">
+            <h5 class="card-title">
+              Código da Vaga: {{ vaga.idVaga }}
+            </h5>
+            <h5 class="card-title">Vaga: {{ vaga.titulo }}</h5>
+            <h5 class="card-title">Descricão: {{ vaga.descricao }}</h5>
+            <h5 class="card-title">Beneficios: {{ vaga.beneficios }}</h5>
+            <h5 class="card-title">Salario: R${{ vaga.remuneracaoVaga }}</h5>
+            <a href="#" class="btn btn-primary mt-4">Candidatar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

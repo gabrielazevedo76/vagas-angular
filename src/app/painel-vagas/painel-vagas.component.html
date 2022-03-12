@@ -1,0 +1,51 @@
+<form class="container">
+  <div class="mb-3">
+    <label class="form-label">Titulo: </label>
+    <input type="text" name="titulo" class="form-control" [(ngModel)] = "vaga.titulo" />
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Descrição: </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)] = "vaga.descricao"></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Requisitos: </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)] = "vaga.requisitos"></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Salario: </label>
+    <input type="text" name="salario" class="form-control" [(ngModel)] = "vaga.remuneracaoVaga"/>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Beneficios: </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)] = "vaga.beneficios"></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Aberta: </label><br/>
+    <input type="checkbox" class="p5" name="aberta" [(ngModel)] = "vaga.aberta"/>
+  </div>
+
+<button type="button" class="btn btn-success" (click)="cadastrar()">Cadastrar Vaga</button>
+<button type="button" class="btn btn-primary" (click)="atualizar(vaga.idVaga)">Atualizar Vaga</button>
+<button type="button" class="btn btn-danger" (click)="excluir(vaga.idVaga)">Excluir Vaga</button>
+</form>
+
+<section class="container lista-vagas mt-4">
+  <div class="row">
+    <div class="col d-flex justify-content-between " style="flex-flow: wrap;">
+      <div *ngFor="let vaga of vagas">
+        <div class="card mt-2" style=" max-width: 18rem">
+          <div class="card-body text-start">
+            <h5 class="card-title">
+              Código da Vaga: {{ vaga.idVaga }}
+            </h5>
+            <h5 class="card-title">Vaga: {{ vaga.titulo }}</h5>
+            <h5 class="card-title">Descricão: {{ vaga.descricao }}</h5>
+            <h5 class="card-title">Beneficios: {{ vaga.beneficios }}</h5>
+            <h5 class="card-title">Salario: R${{ vaga.remuneracaoVaga }}</h5>
+            <a href="#" class="btn btn-primary mt-4">Candidatar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
